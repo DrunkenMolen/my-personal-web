@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 py-4">
+      <nav class="container mx-auto">
+        <ul class="flex justify-center gap-6">
+          <li><a href="#" class="hover:text-cyan-300">Home</a></li>
+          <li><a href="#about" class="hover:text-cyan-300">About</a></li>
+          <li><a href="#contact" class="hover:text-cyan-300">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      class="container mx-auto mt-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24"
+    >
+      <section
+        id="home"
+        class="flex flex-col justify-center min-h-screen gap-6 mt-8 xs:gap-7 xs:mt-0 py-16 md:py-24"
+      >
+        <h1 class="text-4xl md:text-7xl font-bold capitalize">Hi!</h1>
+        <h1 class="text-4xl md:text-7xl font-bold capitalize">
+          You can call me <span class="underline decoration-2">Faizal</span>.
+        </h1>
+        <p class="max-w-xl text-base md:text-lg">
+          I am a graphic designer with a passion for creativity, and I am
+          currently expanding my skill set by delving into Fullstack
+          Development.
+        </p>
+        <button
+          id="confettiBtn"
+          class="text-sm p-3 md:p-4 px-6 border-2 block w-fit font-mono capitalize rounded-md border-accent text-accent hover:bg-accent-light focus:outline-none cursor-pointer mt-3"
+        >
+          Appreciate Me
+        </button>
+      </section>
+
+      <section id="about" class="py-16 m-auto">
+        <h2 class="text-5xl text-center mb-8 capitalize font-medium">About</h2>
+        <p class="text-center text-base md:text-xl leading-relaxed">
+          I am highly motivated to apply my skills in a professional setting and
+          am constantly seeking opportunities to expand my knowledge within the
+          realm of my interests, continually pushing the boundaries of my
+          capabilities.<br />
+        </p>
+        <div class="card pt-5">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-lg shadow-md transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img
+                src="https://i.ibb.co/pwyR42n/photoshop.png"
+                alt="Photoshop"
+                class="mx-auto mb-6 w-20 h-20 object-cover rounded-full"
+              />
+              <h3 class="text-2xl font-semibold mb-4">Photoshop</h3>
+              <p class="text-gray-700 text-center">
+                As a graphic designer, Photoshop is the main application that I
+                master.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-lg shadow-md transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img
+                src="https://i.ibb.co/9VjRZ2W/JS.png"
+                alt="JavaScript"
+                class="mx-auto mb-6 w-20 h-20 object-cover rounded-full"
+              />
+              <h3 class="text-2xl font-semibold mb-4">JavaScript</h3>
+              <p class="text-gray-700 text-center">
+                I have decided to learn JavaScript, hoping to encounter
+                opportunities similar to those that arose when I mastered
+                Photoshop.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-lg shadow-md transition-transform transform hover:scale-105 cursor-pointer"
+            >
+              <img
+                src="https://i.ibb.co/t8M7XkP/after-effects.png"
+                alt="After Effects"
+                class="mx-auto mb-6 w-20 h-20 object-cover rounded-full"
+              />
+              <h3 class="text-2xl font-semibold mb-4">After Effects</h3>
+              <p class="text-gray-700 text-center">
+                After Effects became the second editing program I learned.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-16 m-auto">
+        <h2 class="text-5xl text-center mb-8 capitalize font-medium">
+          Let's Work Together
+        </h2>
+        <p class="text-center text-base md:text-xl md:w-[40rem] mx-auto">
+          I am eager to collaborate and expand my knowledge. Whether you have a
+          project to discuss or just want to say hi, my inbox is open for
+          all!<br />
+        </p>
+        <button
+          onclick="window.location.href='mailto:faizalrahmatn@gmail.com'"
+          class="mt-5 text-sm md:p-4 px-6 border-2 block w-fit font-mono capitalize rounded-md border-accent text-accent hover:bg-accent-light focus:outline-none cursor-pointer mx-auto"
+        >
+          Contact Me
+        </button>
+      </section>
+
+      <footer
+        class="mx-auto px-6 pb-8 md:py-12 sm:px-8 md:px-28 lg:px-20 xl:px-0 max-w-screen-xl"
+      >
+        <hr role="separator" class="h-px my-8 bg-gray-200 border-0" />
+        <div class="flex flex-col items-center gap-4 mt-8">
+          <h3 class="font-mono text-sm md:text-lg text-center">
+            Designed and built by
+            <span
+              class="font-bold font-mono bg-gradient-to-r from-teal-400 to-yellow-200 text-transparent bg-clip-text"
+              >Faizal Nursaori
+            </span>
+            with <span class="font-mono">Mouse </span>&amp;
+            <span class="font-mono">Keyboard</span>
+          </h3>
+          <h3 class="font-mono text-sm text-center text-accent">
+            Copyright © 2024
+          </h3>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
